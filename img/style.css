@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+div{
+    background-color: palevioletred;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+div::after{
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    background: url(./airfly.png) no-repeat center center/cover;
+    /* background-color: violet; */
+    position: absolute;
+    transform:scaleX(100%);
+    animation: animate1 5s infinite 1s ease-in-out;
+    right: 100px;
+
+}
+
+@keyframes animate1{
+25%{
+    top: 0;
+    left: 200px;
+}
+
+/* 50%{
+    top: 100px;
+    left: 280px;
+}
+
+75%{
+    top: 176px;
+    left: 310px;
+} */
+
+100%{
+    top:210px;
+    left: 400px;
+}
+}

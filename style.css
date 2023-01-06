@@ -40,6 +40,8 @@ section .header-container-p1{
     position: relative;
 }
 
+/* (★‿★) Top Navbar (★‿★) */
+
 .left-side-nav{
     margin-left:18px;
 }
@@ -48,8 +50,9 @@ section .header-container-p1{
     height: 270px;
     width: 620px;
     padding-top: 5px
-
 }
+
+/* ^_^ middle-top Navbar ^_^  */
 .middle-nav{
     padding-top: 30px;
     display: flex;
@@ -85,45 +88,52 @@ li{
 
 }
 
+/* ^_^ right Navbar ^_^ */
 .right-nav {
     display: flex;
     width: 102.24px; 
     height: 40.83px; 
-    margin-top: 38px;
-    justify-content: space-around;
+    margin-top: 35px;
+    /* background-color: yellowgreen; */
+    margin-right: 48px;
 }
+
 .right-nav a {
-    padding: 10px;
-    padding-left: 13px;
-    padding-right:13px ;
-    background-color: #000d10;
-    border-radius: 50%;
-
-}
-.right-nav a img {
-    height: 10px;
-    width: 10px;
-    align-items: center;
-    justify-content: center;
-    color: antiquewhite;
-
+    padding: 9px 12px;
+    margin-right: 8px;
+    position: relative;
 }
 
 .right-nav .icon-1 img{
-    height: 15px;
-    width: 15px;
+    background-color: #000d10;
+    padding: 12px;
+    height: 40.8px;
+    width:40.8px;
+    border-radius: 50%;
+
+}
+
+.right-nav  .icon-2{
+    position: absolute;
+    top: 29px;
+    right: 90px;
+    height: 1.8px;
+    width: 1.8px;
+
 }
 
 
+/* (★‿★) middle Navbar (★‿★) */
 div .middle-container{
-position: relative;
+    position: relative;
     width: 500px;
     height: 500px;
     
 }
 
+/* ^_^ clouds ^_^ */
 .middle-container .clouds{
-    /* background-color:antiquewhite; */
+    
     display: flex;
     opacity: 0.3;
     flex-direction: row;
@@ -142,8 +152,6 @@ position: relative;
 .cloud-2{
     position: relative;
     left: -10px;
-    /* opacity: 0.3; */
-    
 }
 
 .cloud-3{
@@ -165,9 +173,9 @@ position: relative;
     top: -40px;
     opacity: 0.4;
 }
- .cloud-6{
+.cloud-6{
     position: absolute;
-  right: -40px;
+    right: -40px;
     opacity: 0.6;
 
 }
@@ -179,63 +187,55 @@ position: relative;
     opacity: 0.4;
 }
 
-/* .cloud-2::before{
+ /* .cloud-2::after{
     content: '';
     height: 100%;
     width: 100%;
     position: absolute;
-    transform: scaleY(100%);
-    animation: animate-cloudes 10s infinite 1s ease-in;
+    transform: scaleX(100%);
+    animation: animate2 1s infinite ease-in;
+    z-index: 1;
 }
 
-@keyframes animate-cloudes {
-    from {
-      left: -10px;
+@keyframes animate2 {
+    0%{
+        top: 200px;
+        left: 300px;
     }
-    to {
-      left: 100px;
+    25%{
+        top: 220px;
+        left: 340px;
+    }
+    50%{
+        top: 250px;
+        left: 380px;
+    }
+    75%{
+        top:230px;
+        left: 350px;
+    }
+    100%{
+        top:240px;
+        left: 320px;
     }
   }
-   */
+    */
 
-.airplane-img img{
-    /* background-color: yellowgreen; */
-    /* position: relative;
-    max-height: 600px;
-    max-width: 1000px;
-    padding: -500px; */
-    /* top: -100px;
-    left: -700px;
-bottom: -500px;
-} */
-    
-}
-    
-
-
+/* ^_^ airPlane Img ^_^ */
 
 div .airplane-img{
     background-color: palevioletred;
-    /* height: 150px; */
-
-    /* width: 100%; */
-    /* height: 100%;
-    width: 100%; */
-    /* background: url(./img/airfly.png) no-repeat center center/cover; */
-top: 0;
-     position: sticky;
+    top: 0;
+    position: sticky;
     overflow: hidden; 
 }
 
 
 div.airplane-img::after{
     content: ' ';
-    /* height: 100%;
-    width: 100%; */
     height: 200px;
     width: 600px;
     background: url(./img/airplane-mov-p1.png) no-repeat center center/cover;
-    /* background-color: violet;  */
     position: absolute;
     transform:scaleX(100%);
     animation: animate1 10s infinite ease-in-out;
@@ -243,8 +243,6 @@ div.airplane-img::after{
     z-index: 2;
 
 }
-
-
 
 @keyframes animate1{
     
@@ -270,6 +268,42 @@ div.airplane-img::after{
 }
 } 
 
+/* <!--******* (✿◠‿◠) *******-->
+<!--*******   Footer   *******--> */
+
+.footer-p1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: -55px;
+    width: 100%;
+    height: 30px;
+}
+/* ^_^ p - p1 ^_^ */
 
 
+.footer-p1 .footer-p-p1{
+    font-weight: 550;
+    position: absolute;
+    left: 48px;
+}
 
+.btn-p1{ 
+    position: relative;
+    right: 100px;
+    background-color: var(--textColor-p1);
+    border-radius: 20px;
+    padding: 11px 15px;
+    font-size: 0.8rem;
+    font-weight: 550;
+    top: -15px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+a .btn-p1 .right-btn{
+    right: 160px;
+}

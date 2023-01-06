@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    color: #000d10;
+    font-size: 1.125rem;
+    font-family: HelveticaNowDisplay, Helvetica ,Arial, sans-serif;
+    line-height: 1.6111111;
+    font-weight: 400;
+}
+
+body{
+    max-width: 1200px;
+    max-height: 100vh;
+    background-image: linear-gradient(#7394b5, #ffff);
+}
+
+/* 
+<--****************************** (❁´◡`❁) ******************************-->
+<--******************************** p-1 **********************************--> */
+
+section .header-container-p1{
+    height: 100vh;
+}
+
+.header-container-p1{
+    width: 100%;
+    min-height: 240px;
+}
+
+.navbar-p1{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+.left-side-nav{
+    margin-left:18px;
+}
+
+.left-side-nav img{
+    height: 270px;
+    width: 620px;
+    padding-top: 5px
+
+}
+.middle-nav{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 38px;
+
+}
+.middle-nav ul{
+    
+    display: flex;
+    font-size: 16.29px;
+    margin-left: 15px;
+}
+li{
+    list-style: none;
+    
+}
+.middle-nav ul li a{
+    text-decoration: none;
+    color: var(--textColor-p1);
+    margin-right: 25px;
+}
+
+
+.middle-nav .h1-p1{
+    margin-top: 68px;
+    margin-left: 15px;
+    margin-right: -20px;
+    font-size: 2.7rem;
+    line-height: .9;
+    letter-spacing: -2.5px;
+    font-weight: 550;
+
+}
+
+.right-nav {
+    display: flex;
+    width: 102.24px; 
+    height: 40.83px; 
+    margin-top: 38px;
+    justify-content: space-around;
+}
+.right-nav a {
+    padding: 10px;
+    padding-left: 13px;
+    padding-right:13px ;
+    background-color: #000d10;
+    border-radius: 50%;
+
+}
+.right-nav a img {
+    height: 10px;
+    width: 10px;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+
+}
+
+.right-nav .icon-1 img{
+    height: 15px;
+    width: 15px;
+}
+
+
+div .middle-container{
+position: relative;
+    width: 500px;
+    height: 500px;
+    
+}
+
+.middle-container .clouds{
+    /* background-color:antiquewhite; */
+    display: flex;
+    opacity: 0.3;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+.cloud-1{
+    position: relative;
+    left: 0px;
+    top: 50px;
+    opacity: 0.2;
+
+}
+
+.cloud-2{
+    position: relative;
+    left: -10px;
+    /* opacity: 0.3; */
+    
+}
+
+.cloud-3{
+    position:relative;
+    left: 0px;
+    top: 10px;
+    opacity: 0.2;
+}
+
+.cloud-4{
+    position: relative;
+    left: 60px;
+    opacity: 0.3;
+}
+
+.cloud-5{
+    position: absolute;
+    right: 500px;
+    top: -40px;
+    opacity: 0.4;
+}
+ .cloud-6{
+    position: absolute;
+  right: -40px;
+    opacity: 0.6;
+
+}
+
+.cloud-7{
+    position: relative;
+    right: 340px;
+    top: -20px;
+    opacity: 0.4;
+}
+
+/* .cloud-2::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scaleY(100%);
+    animation: animate-cloudes 10s infinite 1s ease-in;
+}
+
+@keyframes animate-cloudes {
+    from {
+      left: -10px;
+    }
+    to {
+      left: 100px;
+    }
+  }
+   */
+
+.airplane-img img{
+    /* background-color: yellowgreen; */
+    /* position: relative;
+    max-height: 600px;
+    max-width: 1000px;
+    padding: -500px; */
+    /* top: -100px;
+    left: -700px;
+bottom: -500px;
+} */
+    
+}
+    
+
+
+
+div .airplane-img{
+    background-color: palevioletred;
+    /* height: 150px; */
+
+    /* width: 100%; */
+    /* height: 100%;
+    width: 100%; */
+    /* background: url(./img/airfly.png) no-repeat center center/cover; */
+top: 0;
+     position: sticky;
+    overflow: hidden; 
+}
+
+
+div.airplane-img::after{
+    content: ' ';
+    /* height: 100%;
+    width: 100%; */
+    height: 200px;
+    width: 600px;
+    background: url(./img/airplane-mov-p1.png) no-repeat center center/cover;
+    /* background-color: violet;  */
+    position: absolute;
+    transform:scaleX(100%);
+    animation: animate1 10s infinite ease-in-out;
+    right: 100px;
+    z-index: 2;
+
+}
+
+
+
+@keyframes animate1{
+    
+0%{
+    top: 200px;
+    left: 300px;
+}
+25%{
+    top: 220px;
+    left: 340px;
+}
+50%{
+    top: 250px;
+    left: 380px;
+}
+75%{
+    top:230px;
+    left: 350px;
+}
+100%{
+    top:240px;
+    left: 320px;
+}
+} 
+
+
+
+

@@ -1,0 +1,187 @@
+
+    
+    @media (max-width:900px) {
+
+        html{
+            width: 900px;
+        }
+        .navbar-p1{
+            top: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar-p1 .left-side-nav{
+            background: url(./img/hr.png) no-repeat center center/cover;
+            height: 100px;
+            width: 100px;
+        }
+        .cloud-4,
+        .cloud-5,
+        .cloud-6, 
+        .cloud-7{
+          display: none;
+        }
+        
+        .middle-nav ul{
+            overflow: hidden;
+        }
+    
+        .right-nav{
+            position: absolute;
+            left: 350px;
+            top: 150px;
+        } 
+
+
+        div .airplane-img{
+            top: -150px;
+            position: relative;
+            left: -200px;
+
+        }
+        div.airplane-img::after
+        {
+            
+            background: url(./img/media-air.png) no-repeat center center/cover;
+            height: 200px;
+            width: 450px;
+
+        }
+
+        div.airplane-img::after{
+            content: ' ';
+            height: 250px;
+            width: 550px;
+            background: url(./img/media-air.png) no-repeat center center/cover;
+            position: absolute;
+            transform:scaleX(100%);
+            animation: animate1 8s infinite ease-in-out;
+            right: 100px;
+            z-index: 2;
+        
+        }
+        
+        @keyframes animate1{
+            
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+
+        25%{
+            top: 10px;
+            left: 10px;
+        }
+        50%{
+            top: 25px;
+            left:-20px;
+        }
+        75%{
+            top:50px;
+            left: 30px;
+        }
+        100%{
+            top:70px;
+            left: 0px;
+        }
+        } 
+        .middle-nav .h1-p1{
+            width: 100px;
+            top:120px;
+        }
+
+        .footer-p1{
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            top: -120px;
+            left: 0px;
+            gap: 12px;
+        }
+
+        .footer-p-p1{
+        position: absolute;
+        left: 50px;
+        display: none;
+        }
+        .btn-p1{
+            
+            position: relative;
+            left:-400px;
+        }
+
+        .container-p2{
+            display: flex;
+            align-items: flex-start;
+
+        }
+        .title-p2{
+            position: relative;
+            left: 0px;
+            font-size: 1.8rem;
+            line-height: 30px;
+        }
+
+        .footer-p2{
+            position: static;
+            margin-left: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .sub-title h3{
+        
+            font-size: 2rem;
+        }
+
+        .sub-title h3 p{
+            font-size: 8rem;
+        }
+        .sub2, .sub4{
+            left: 0px;
+        }
+        
+        .flex-class-p3{
+            height: 100vh;
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .left-p3{
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+            font-size:10px ;
+            padding: 30px;
+        }
+
+
+        .flex-class-p3 .left-p3 h1{
+        font-size: 30px;
+        position: relative;
+        line-height: 25px;
+        top: -20px;
+        }
+
+        .flex-class-p3 .left-p3 p{
+        display: none;
+        }
+
+
+        .flex-class-p3 .middle-p3{
+            background: #d79f9f;
+            color: black;
+            font-weight: 700;
+        }
+        }
+
+        @media (min-width:64em) {
+
+            body{
+                height: 100vh;
+                font-size:medium;
+            }
+            }
+        

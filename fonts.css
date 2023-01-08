@@ -1,4 +1,10 @@
 :root{
    
-    --textColor-p1: #000d10;
+    --titles-Color: #000d10;
+    --subTitles-color: #8e8e95;
+    --whiteText-color:#fff;
+
+    --titles-font:HelveticaNowDisplayTitles;
+    --subTitles-font:HelveticaNowDisplaySubTitles;
+
 }
